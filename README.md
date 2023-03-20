@@ -1,6 +1,6 @@
 # phpmyadmin-install
 
-apt update
+apt update <br>
 sudo apt install phpmyadmin
 sudo apt install php-mbstring php-zip php-gd php-json php-curl
 cd /etc/apache2/
