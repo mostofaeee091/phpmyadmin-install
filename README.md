@@ -1,17 +1,17 @@
 # phpmyadmin-install
 
 apt update <br>
-sudo apt install phpmyadmin
-sudo apt install php-mbstring php-zip php-gd php-json php-curl
-cd /etc/apache2/
-sudo nano apache2.conf
-Include /etc/phpmyadmin/apache.conf
-AllowOverride All
-apt install mysql-server
-sudo mysql
-SELECT user.authentication_string,plugin,host FROM mysql.user;
-CREATE DATABASE laravel_db;
-CREATE USER 'laravel_user'@'localhost' IDENTIFIED BY 'admin007';
-GRANT ALL ON laravel_db.* TO 'laravel_user'@'localhost';
-FLUSH PRIVILEGES;
+sudo apt install phpmyadmin<br>
+sudo apt install php-mbstring php-zip php-gd php-json php-curl<br>
+cd /etc/apache2/<br>
+sudo nano apache2.conf<br>
+Include /etc/phpmyadmin/apache.conf<br>
+AllowOverride All<br>
+apt install mysql-server<br>
+sudo mysql<br>
+SELECT user.authentication_string,plugin,host FROM mysql.user;<br>
+CREATE DATABASE laravel_db;<br>
+CREATE USER 'laravel_user'@'localhost' IDENTIFIED BY 'admin007';<br>
+GRANT ALL ON laravel_db.* TO 'laravel_user'@'localhost';<br>
+FLUSH PRIVILEGES;<br>
 QUIT
